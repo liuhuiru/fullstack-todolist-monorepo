@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"vite\")",
+      "Bash(pnpm --filter web dev)",
+      "Bash(pnpm --filter client dev)",
+      "Bash(brew install:*)"
+    ]
+  }
+}

@@ -15,11 +15,11 @@ export function TodoItem({ todo }: { todo: Todo }) {
   const [isPending, startTransition] = useTransition();
 
   function handleToggle() {
-    startTransition(() => toggleTodo(todo.id, !todo.completed));
+    startTransition(async () => { await toggleTodo(todo.id, !todo.completed); });
   }
 
   function handleDelete() {
-    startTransition(() => deleteTodo(todo.id));
+    startTransition(async () => { await deleteTodo(todo.id); });
   }
 
   function handleSaveEdit() {

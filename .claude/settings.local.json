@@ -5,7 +5,9 @@
       "Bash(pkill -f \"vite\")",
       "Bash(pnpm --filter web dev)",
       "Bash(pnpm --filter client dev)",
-      "Bash(brew install:*)"
+      "Bash(brew install:*)",
+      "Bash(npx vercel:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
+  base: '/fullstack-todolist-monorepo/',
   plugins: [react()],
   resolve: {
     alias: {
